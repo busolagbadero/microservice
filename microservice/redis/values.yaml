@@ -1,0 +1,12 @@
+varName: redis-cart
+replicas:  1
+imageName:  redis
+imageVersion: alpine
+varPort: 6379
+envVar:
+- name: PORT
+  value: "6379"
+servicePort: 6379
+serviceType: ClusterIP
+mounthPath: /data
+volumeName: redis-data

@@ -1,0 +1,14 @@
+varName: emailservice
+replicas:  2
+imageName:  gcr.io/google-samples/microservices-demo/emailservice
+imageVersion: v0.8.1
+varPort:  8080
+envVar:
+- name: PORT
+  value: "8080"
+- name: DISABLE_TRACING
+  value: "1"
+- name: DISABLE_PROFILER
+  value: "1"
+servicePort: 8080
+serviceType: ClusterIP

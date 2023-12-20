@@ -1,0 +1,14 @@
+varName: currencyservice
+replicas:  2
+imageName:  gcr.io/google-samples/microservices-demo/currencyservice
+imageVersion: v0.8.1
+varPort:  3550
+envVar:
+- name: PORT
+  value: "3550"
+- name: DISABLE_TRACING
+  value: "1"
+- name: DISABLE_PROFILER
+  value: "1"
+servicePort: 3550
+serviceType: ClusterIP
